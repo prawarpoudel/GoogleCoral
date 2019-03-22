@@ -30,10 +30,8 @@ Following are the steps that I followed:
 `sudo apt-get install screen`
 2. Find the boot mode switches. They are four switches that are marked 1,2,3,4. Make sure that Switch 1 is ON while all other switches are OFF. (ON means they are pulled upwards)
 3. In your terminal in Linux machine, type in following command. This will enable the computer to recognize the board.
----
-****
 sudo sh -c "echo 'SUBSYSTEM==\"usb\", ATTR{idVendor}==\"0525\", MODE=\"0664\",GROUP=\"plugdev\", TAG+=\"uaccess\"' >> /etc/udev/rules.d/65-edgetpu-board.rules"
----
+  
 `sudo udevadm control --reload-rules && udevadm trigger`
 4. Connect to the serial terminal. It is where the USB-microB cable fits in. Two leds, one green and one orange will light up.
 5. Search for the device name in terminal. Type in `dmesg | grep ttyUSB`. You will get the result as follows:
