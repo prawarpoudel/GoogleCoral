@@ -5,9 +5,10 @@ I got hands on to a Google Coral development board. Please check it out at this 
 This document describes the steps that I followed from the official link, but is re-written for my own convenience so that in future I can refer to this document. The content are derived from the Google official page at this [link](https://coral.withgoogle.com/tutorials/devboard/).
 
 ## Looks
-This is how it looks. The images are of the ones that I had with me.
+This is how it looks. The images are of the ones that I had with me.</br>
 <img src="frontCoral.png" height="250" width="250">
 <img src="backCoral.png" height="250" width="250">
+</br>
 
 ## Getting Started
 The getting started guide wants us to boot through a linux machine rather than using SD card directly to the board. So, that is the way I am going to follow. So the booting method would be **emmc**, rather than SD card. 
